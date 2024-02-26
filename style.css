@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+header ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;    
+}
+
+.slider img{
+    width: 100%;
+   
+}
+
+
+
+
+
