@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f1f1f1;
+}
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px;
+    margin: 10px 8px;
+    padding: 0px 8px;
+    background-color: coral;
+    border-radius:10px ;
+}
+
+header h1{
+    color: rgb(10, 82, 82);
 }
 
 header ul{
@@ -18,11 +28,45 @@ header ul{
 }
 
 .slider img{
-    width: 100%;
-   
+    width: 98%;
+   margin: 5px;
+   margin-top: -5px;
+   border-radius: 10px;
 }
 
+.search{
+    width: 98%;
+    margin: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 9px;
+    border: none;
+    outline:none ;
+    border-radius: 10px;
+    background-color: darkgrey;
+}
 
+.prdt-card{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 8px;
+
+}
+
+.prdt-card img{
+    width: 95%;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.prdt-card h2{
+    color: coral;
+    margin: 8px;
+}
+
+.prdt-card p{
+    margin: 6px;
+}
 
 
 
