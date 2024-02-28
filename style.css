@@ -64,9 +64,55 @@ header ul{
     margin: 8px;
 }
 
-.prdt-card p{
+.prdt-card p,h4{
     margin: 6px;
 }
 
 
+.prdt-sec:hover{
+    cursor: pointer;
+    scale: 1.0;
+    border: 1px solid tomato;
+    border-radius: 10px;
+}
 
+.prdt-sec .rat{
+    color: rgb(14, 134, 46);
+    font-size: 16px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #c8bebe;
+    padding: 10px;
+}
+
+.heading p{
+    font-size: 20px;
+   color: rgb(40, 9, 107);
+}
+
+.heading button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: chocolate;
+    font-size: 15px;
+}
+
+.heading button:hover{
+    cursor: pointer;
+}
+
+
+@media(max-width:767px){
+    .prdt-card{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    
+    }
+}

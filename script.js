@@ -33,7 +33,7 @@ imgSlide()
 // product container
 
 
-let prdturl = "product.json"
+let prdturl = "prdt.json"
 fetch(prdturl)
  .then(res => res.json())
  .then(res =>{
@@ -56,16 +56,18 @@ fetch(prdturl)
 
 
  function html(prdt){
- const {img, title, price } = prdt;
+ const {image, title, price, category, rating} = prdt;
 
 
      const code  = `
 
-        <div>
-            <img src='${img}'/>
+        <div class="prdt-sec">
+            <img src='${image}'/>
             <p>${title.length > 22 ? title.slice(0, 22)+ '...' : title}</p>
             <h2>${price}</h2>
-            
+            <h4>${category}</h4>
+            <p class="rat">Rating:${rating.rate}</p>
+            <p  class="rat">Sold:${rating.count}</p>
 
         </div>
      
